@@ -142,7 +142,7 @@ pub struct EnumStruct {
     b: u32,
     c: u32,
 }
-// testing actions
+
 #[no_mangle]
 pub extern "C" fn data_enum_encode(ptr: *mut EnumStruct) -> *const libc::c_char {
     // CString::new(hex::encode(value.encode())).unwrap().into_raw()
